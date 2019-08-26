@@ -1,9 +1,13 @@
 $color-one: #ffffff;
 $color-two: #E1DFDF;
 $color-three: #ffd800;
+$color-four: #000000;
 
 $text-main: #000000;
 $text-gold: #edf921;
+
+$nav-hover: #fdd133;
+$button-hover: #2272cb;
 
 .navigation {
     background-color: lightslategrey;
@@ -29,7 +33,7 @@ $text-gold: #edf921;
 }
 
 .navigation a:hover {
-    color: #fdd133;
+    color: $nav-hover;
     transition: 0.5s;
 }
 
@@ -95,7 +99,7 @@ $text-gold: #edf921;
 
 .btn:hover {
     background-position: 0 100%;
-    color: #2272cb;
+    color: $button-hover;
     transition: 1s;
 }
 
@@ -107,7 +111,7 @@ $text-gold: #edf921;
 
 .card {
     margin-bottom: 80px;
-    background-color: #ffffff;
+    background-color: $color-one;
 }
 
 .card img {
@@ -158,7 +162,7 @@ $text-gold: #edf921;
     line-height: 60px;
     color: #fff;
     border-radius: 50%;
-    background-color: #000000;
+    background-color: $color-four;
 }
 
 @media (max-width: 767px) {
