@@ -7,6 +7,7 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+  font-size: 16px;
 }
 
 .navigation li {
@@ -16,25 +17,29 @@
 
 .navigation a {
   text-decoration: none;
-  color: black;
+  color: #000000;
+  transition: 0.5s;
 }
 
 .navigation a:hover {
-  color: coral;
+  color: #fdd133;
+  transition: 0.5s;
 }
 
 .brand a {
-  color: gold;
+  color: #edf921;
+  transition: 1s;
 }
 
 .brand a:hover {
-  color: gold;
+  color: #000000;
+  transition: 1s;
 }
 
 .splash {
   background-color: green;
-  color: white;
-  min-height: 500px;
+  color: #ffffff;
+  min-height: 700px;
   display: -ms-flexbox;
   display: flex;
 }
@@ -48,7 +53,6 @@
 .page-title {
   margin: 0;
   font-size: 32px;
-  /* word-spacing: -24px; */
   line-height: 1.2;
   font-weight: 500;
 }
@@ -66,11 +70,11 @@
 
 .btn {
   display: inline-block;
-  min-width: 160px;
+  min-width: 240px;
   margin: 24px auto 0 auto;
   padding: 16px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 24px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -80,11 +84,93 @@
   background-color: #ffd800;
   background-position: 100% 0;
   background-size: 300%;
+  transition: 1s;
 }
 
 .btn:hover {
   background-position: 0 100%;
   color: #2272cb;
   transition: 1s;
+}
+
+.services-head {
+  text-align: center;
+  padding: 56px;
+  font-weight: bold;
+}
+
+.card {
+  margin-bottom: 80px;
+  background-color: #ffffff;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-body h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.second {
+  background-color: #E1DFDF;
+}
+
+.icon {
+  font-size: 36px;
+  border-radius: 50%;
+  color: #edf921;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+}
+
+.footer {
+  background-color: #E1DFDF;
+}
+
+.footer li {
+  font-size: 0;
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+}
+
+.footer ul {
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer i {
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+@media (max-width: 767px) {
+  .card-image {
+    max-width: 100%;
+    height: 150px;
+    position: relative;
+  }
+  .navigation li {
+    margin: 0 10px 0 0;
+    font-size: 14px;
+  }
+  .spash-inner {
+    margin: 10px;
+  }
+  .page-title {
+    font-size: 60px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
