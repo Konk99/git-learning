@@ -1,6 +1,15 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 .navigation {
-  background-color: lightslategrey;
-  padding: 12px 0;
+  background-color: none;
+  padding: 24px 0;
+  position: absolute;
 }
 
 .navigation ul {
@@ -13,11 +22,12 @@
 .navigation li {
   margin: 0 36px 0 0;
   position: relative;
+  font-size: 16px;
 }
 
 .navigation a {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
   transition: 0.5s;
 }
 
@@ -27,8 +37,9 @@
 }
 
 .brand a {
-  color: #edf921;
+  color: #FEB715;
   transition: 1s;
+  font-size: 24px;
 }
 
 .brand a:hover {
@@ -93,6 +104,11 @@
   transition: 1s;
 }
 
+.services {
+  width: 100%;
+  background-color: #ffffff;
+}
+
 .services-head {
   text-align: center;
   padding: 56px;
@@ -116,21 +132,19 @@
   font-weight: bold;
 }
 
-.second {
+.portfolio {
+  width: 100%;
   background-color: #E1DFDF;
 }
 
 .icon {
-  font-size: 36px;
+  font-size: 42px;
   border-radius: 50%;
-  color: #edf921;
-  width: 60px;
-  height: 60px;
+  color: #FEB715;
+  width: 70px;
+  height: 70px;
   line-height: 60px;
-}
-
-.footer {
-  background-color: #E1DFDF;
+  border: 3px solid #FEB715;
 }
 
 .footer li {
@@ -144,6 +158,10 @@
   position: relative;
   list-style-type: none;
   padding: 0;
+}
+
+.footer p {
+  font-size: 16px;
 }
 
 .footer i {

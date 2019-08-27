@@ -4,14 +4,24 @@ $color-three: #ffd800;
 $color-four: #000000;
 
 $text-main: #000000;
-$text-gold: #edf921;
+$text-gold: #FEB715;
 
 $nav-hover: #fdd133;
 $button-hover: #2272cb;
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+}
+
 .navigation {
-    background-color: lightslategrey;
-    padding: 12px 0;
+    background-color:  none;
+    padding: 24px 0;
+    position: absolute;
 }
 
 .navigation ul {
@@ -24,11 +34,12 @@ $button-hover: #2272cb;
 .navigation li {
     margin: 0 36px 0 0;
     position: relative;
+    font-size: 16px;
 }
 
 .navigation a {
     text-decoration: none;
-    color: $text-main;
+    color: $color-one;
     transition: 0.5s;
 }
 
@@ -40,6 +51,7 @@ $button-hover: #2272cb;
 .brand a {
     color: $text-gold;
     transition: 1s;
+    font-size: 24px;
 }
 
 .brand a:hover {
@@ -103,6 +115,11 @@ $button-hover: #2272cb;
     transition: 1s;
 }
 
+.services {
+    width: 100%;
+    background-color: $color-one
+}
+
 .services-head {
     text-align: center;
     padding: 56px;
@@ -125,21 +142,19 @@ $button-hover: #2272cb;
     font-weight: bold;
 }
 
-.second {
+.portfolio {
+    width: 100%;
     background-color: $color-two;
 }
 
 .icon {
-    font-size: 36px;
+    font-size: 42px;
     border-radius: 50%;
     color: $text-gold;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     line-height: 60px;
-}
-
-.footer {
-    background-color: $color-two;
+    border: 3px solid $text-gold;
 }
 
 .footer li {
@@ -153,6 +168,10 @@ $button-hover: #2272cb;
     position: relative;
     list-style-type: none;
     padding: 0;
+}
+
+.footer p {
+    font-size: 16px;
 }
 
 .footer i {
