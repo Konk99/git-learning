@@ -3,6 +3,9 @@ $color-two: #E1DFDF;
 $color-three: #ffd800;
 $color-four: #000000;
 
+$text-font-golden: 'Great Vibes', cursive;
+$text-font: 'Roboto', sans-serif;
+
 $text-main: #000000;
 $text-gold: #FEB715;
 
@@ -16,11 +19,13 @@ $button-hover: #2272cb;
 
 body {
     margin: 0;
+    font-family : $text-font;
+    transform:translateX(15%);
 }
 
 .navigation {
     background-color:  none;
-    padding: 24px 0;
+    padding: 50px 0;
     position: absolute;
 }
 
@@ -41,6 +46,7 @@ body {
     text-decoration: none;
     color: $color-one;
     transition: 0.5s;
+    font-family: $text-font;
 }
 
 .navigation a:hover {
@@ -52,6 +58,7 @@ body {
     color: $text-gold;
     transition: 1s;
     font-size: 24px;
+    font-family: $text-font-golden;
 }
 
 .brand a:hover {
@@ -60,13 +67,15 @@ body {
 }
 
 .splash {
-    background-color: green;
     color: $color-one;
     min-height: 700px;
     display: flex;
+    background-image: url(../images/Background_Image.jpg);
+    background-position: center;
 }
 
 .splash-inner {
+    padding-top: 100px;
     margin: auto;
     max-width: 70%;
     text-align: center;
@@ -74,15 +83,24 @@ body {
 
 .page-title {
     margin: 0;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 1.2;
     font-weight: 500;
 }
 
 .page-subtitle {
-    margin: 24px 0;
+    margin: 0 0;
     font-weight: 900;
-    font-size: 64px;
+    font-size: 42px;
+    padding-top: 25px;
+}
+
+.sub-head {
+    font-size: 78px;
+}
+
+.head {
+    font-size: 38px;
 }
 
 .splash-inner a {
@@ -96,7 +114,7 @@ body {
     margin: 24px auto 0 auto;
     padding: 16px;
     border-radius: 5px;
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
@@ -117,18 +135,27 @@ body {
 
 .services {
     width: 100%;
-    background-color: $color-one
+    background-color: $color-one;
+    margin-top: 30px;
 }
 
 .services-head {
     text-align: center;
     padding: 56px;
-    font-weight: bold;
+}
+
+.services-sub {
+    margin-bottom: 60px;
+}
+
+.left {
+    padding-left: 70px;
 }
 
 .card {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     background-color: $color-one;
+    width: 300px;
 }
 
 .card img {
@@ -137,14 +164,25 @@ body {
     object-fit: cover;
 }
 
+.card-body {
+    text-align: center;
+    height: 80px;
+}
+
 .card-body h3 {
     font-size: 24px;
     font-weight: bold;
+    margin-bottom: 0;
+}
+
+.card-body p {
+    margin-top: 0;
 }
 
 .portfolio {
     width: 100%;
     background-color: $color-two;
+    margin-top: 30px;
 }
 
 .icon {
@@ -155,6 +193,10 @@ body {
     height: 70px;
     line-height: 60px;
     border: 3px solid $text-gold;
+}
+
+.footer {
+    margin-top: 40px;
 }
 
 .footer li {
@@ -175,13 +217,14 @@ body {
 }
 
 .footer i {
-    font-size: 30px;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
     color: #fff;
     border-radius: 50%;
     background-color: $color-four;
+    margin: 5px;
 }
 
 @media (max-width: 767px) {
@@ -203,5 +246,11 @@ body {
 
     .page-title {
         font-size: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        flex: 0 0 20%;
     }
 }
